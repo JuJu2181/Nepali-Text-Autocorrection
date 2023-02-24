@@ -1,9 +1,9 @@
-# Nepali Text Autocorrection System
+# Nepali Spell Checker and Text Autocorrection System
 
 ## Author: [Anish Shilpakar](https://github.com/JuJu2181)
 
 ## About this project
-Text autocorrection system is a software application that is designed to automatically correct errors in text input by suggesting the most appropriate corrections. The system uses algorithms to analyze the input text and compare it with a database of correct words, phrases or sentences, and provides suggestions for corrections in real-time.
+Nepali spell checker is a system that will check spelling of Nepali words and then provide suggestions for possible corrections of the word. Text autocorrection system is a software application that is designed to automatically correct errors in text input by suggesting the most appropriate corrections. The system uses algorithms to analyze the input text and compare it with a database of correct words, phrases or sentences, and provides suggestions for corrections in real-time.
 
 Text autocorrection systems are essential tools for improving the accuracy and efficiency of text-based communication, especially in situations where the input is prone to errors. For example, in mobile devices, text messages, emails, and other applications, text autocorrection can significantly reduce the time required to type and edit text, making it easier and faster for users to communicate.
 
