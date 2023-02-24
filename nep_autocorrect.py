@@ -61,19 +61,26 @@ def main():
     words, vocabulary = get_vocabulary() 
     word_freq = get_frequency_of_words(words)
     probs = get_probs(word_freq)
-    if input_word in vocabulary:
-        print("Word is correct, so no correction needed")
-        return list(input_word)
-    else: 
-        start = time.time()
-        print("Getting possible suggestions for given word:")
-        suggestions_jac = get_suggestions(input_word, vocabulary, word_freq, probs, 5, "jac")
-        suggestions_lev = get_suggestions(input_word, vocabulary, word_freq, probs, 5, "lev")
-        print(f"Suggestions using Jaccard Similarity: \n{suggestions_jac}")
-        print(f"Suggestions using Levenshthein distance: \n{suggestions_lev}")
-        end = time.time() 
-        print(f"Time taken for suggesting words: {end-start}")
-        return suggestions_jac
+    # if input_word in vocabulary:
+    #     print("Word is correct, so no correction needed")
+    #     return list(input_word)
+    # else: 
+    start = time.time()
+    print("Getting possible suggestions for given word:")
+    suggestions_jac = get_suggestions(input_word, vocabulary, word_freq, probs, 5, "jac")
+    suggestions_lev = get_suggestions(input_word, vocabulary, word_freq, probs, 5, "lev")
+    print(f"Suggestions using Jaccard Similarity: \n{suggestions_jac}")
+    print(f"Suggestions using Levenshthein distance: \n{suggestions_lev}")
+    end = time.time() 
+    print(f"Time taken for suggesting words: {end-start}")
+    return suggestions_jac
+
+def check_spell(input_word):
+    words, vocabulary = get_vocabulary() 
+    word_freq = get_frequency_of_words(words)
+    probs = get_probs(word_freq)
+    suggestions_jac = get_suggestions(input_word, vocabulary, word_freq, probs, 10, "jac")
+    return suggestions_jac
 
 if __name__ == "__main__":
     main()
