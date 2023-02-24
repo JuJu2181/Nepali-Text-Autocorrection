@@ -19,4 +19,7 @@ In this project I have implemented a simple text autocorrection system for Nepal
 - nep_autocorrect.py is python script to get the suggested words for given input word
 - nep_dict_words.txt is the collection of Nepali words used to create vocabulary in this project.
 
+### Output:
+![Sample Output](output.jpg)
+
 > If you want to contribute to this project, feel free to fork this project and send pull requests for your contributions. And if you like this project, don't forget to leave a ⭐ in this repository
